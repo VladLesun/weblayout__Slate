@@ -1,0 +1,26 @@
+.partners {
+	padding: 105px 0;
+}
+
+.partners__title {
+	margin-bottom: 20px;
+}
+
+.partners__description {
+	max-width: 538px;
+	margin-bottom: 60px;
+}
+
+.partners__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 74px;
+	margin-bottom: 50px;
+}
+
+.partners__button {
+	width: 198px;
+	border-color: var(--first-color);
+}

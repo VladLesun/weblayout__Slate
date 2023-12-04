@@ -1,0 +1,30 @@
+.gallery {
+	padding: 105px 0;
+}
+
+.gallery__title {
+	margin-bottom: 20px;
+}
+
+.gallery__description {
+	margin-bottom: 45px;
+	max-width: 466px;
+}
+
+.gallery__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 33px 44px;
+	margin-bottom: 44px;
+}
+
+.gallery__img {
+	border-radius: 12px;
+}
+
+.gallery__button {
+	width: 200px;
+	border-color: var(--first-color);
+}

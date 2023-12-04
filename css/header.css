@@ -1,0 +1,22 @@
+.header {
+	padding: 30px 0 35px;
+}
+
+.header__container {
+	flex-direction: row;
+	gap: 110px;
+}
+
+.header__logo {
+	max-width: 142px;
+}
+
+/* .header__navigation {
+} */
+
+.header__entry {
+	width: 145px;
+	height: 52px;
+	
+	border-color: var(--first-color);
+}
