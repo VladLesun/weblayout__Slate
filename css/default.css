@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -11,9 +12,12 @@ html {
 :root {
 	--first-color: #fff;
 	--second-color: #000;
+	--active-color: #949494;
 	--first-bg: #181818;
 	--second-bg: #fff;
 	--blue-btn: #4452fe;
+	--blue-hov: #0015ff;
+	--blue-active: #1621a3;
 }
 
 body {
@@ -58,7 +62,8 @@ svg {
 a {
 	text-decoration: none;
 	color: inherit;
-  cursor: pointer;
+	cursor: pointer;
+	outline: none;
 }
 
 button {
@@ -67,4 +72,5 @@ button {
 	background-color: transparent;
 	border: 1px solid transparent;
 	cursor: pointer;
+	outline: none;
 }

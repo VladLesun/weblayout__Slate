@@ -12,5 +12,8 @@
 	letter-spacing: 0.2px;
 }
 
-/* .navigation__link {
-} */
+@media (max-width: 1200px) {
+	.navigation__list {
+		gap: 30px;
+	}
+}

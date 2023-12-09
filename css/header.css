@@ -11,12 +11,29 @@
 	max-width: 142px;
 }
 
-/* .header__navigation {
-} */
-
 .header__entry {
 	width: 145px;
-	height: 52px;
-	
 	border-color: var(--first-color);
+}
+
+@media (max-width: 1200px) {
+	.header__container {
+		gap: 70px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.header__container {
+		justify-content: space-between;
+		gap: 100px;
+	}
+	.header__navigation {
+		display: none;
+	}
+}
+
+@media (max-width: 760px) {
+	.header {
+		padding: 28px 0 48px;
+	}
 }

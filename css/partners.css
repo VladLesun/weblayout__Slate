@@ -20,7 +20,31 @@
 	margin-bottom: 50px;
 }
 
+.partners__item {
+	outline: none;
+}
+
 .partners__button {
 	width: 198px;
 	border-color: var(--first-color);
+}
+
+@media (max-width: 1000px) {
+	.partners__list {
+		gap: 40px;
+	}
+}
+
+@media (max-width: 760px) {
+	.partners__description {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 580px) {
+	.partners__list {
+		justify-content: space-between;
+		max-width: 385px;
+		gap: 50px;
+	}
 }

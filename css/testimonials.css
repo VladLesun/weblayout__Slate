@@ -22,6 +22,10 @@
 	border-radius: 10px;
 }
 
+.testimonials__article {
+	outline: none;
+}
+
 .testimonials__person {
 	display: flex;
 	align-items: center;
@@ -47,9 +51,21 @@
 }
 
 .testimonials__description {
-  max-width: 348px;
+	max-width: 348px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px; /* 150% */
 	letter-spacing: 0.2px;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 760px) {
+}
+
+@media (max-width: 580px) {
 }

@@ -18,7 +18,6 @@
 
 .contents__item {
 	max-width: 476px;
-	padding: 40px 35px;
 	margin: 0 auto;
 	background-color: var(--second-bg);
 	color: var(--second-color);
@@ -30,6 +29,8 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 40px 35px;
+	outline: none;
 }
 
 .contents__article-title {
@@ -63,7 +64,7 @@
 .contents__img_download {
 	max-width: 405px;
 	padding-bottom: 230px;
-	background-image: url('../img/content1.png');
+	background-image: url('../img/content1.avif');
 }
 
 /* Вторая карточка */
@@ -80,5 +81,29 @@
 	max-width: 380px;
 	padding-bottom: 276px;
 	border-radius: 14px;
-	background-image: url('../img/123.jpeg');
+	background-image: url('../img/content2.avif');
+}
+
+@media (max-width: 1200px) {
+	.contents__article {
+		padding: 15px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.contents__list {
+		flex-wrap: wrap;
+	}
+	.contents__article {
+		padding: 40px 35px;
+	}
+}
+
+@media (max-width: 760px) {
+	.contents__description {
+		margin-bottom: 54px;
+	}
+}
+
+@media (max-width: 580px) {
 }

@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+		<link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
+
 		<link
 			rel="preload"
 			href="./fonts/GraphikLCG-Medium.woff2"
@@ -32,21 +34,34 @@
 				<nav class="header__navigation navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item">
-							<a class="navigation__link" href="#!">Возможности</a>
+							<a class="navigation__link link-offset-hov" href="#features"
+								>Возможности</a
+							>
 						</li>
 						<li class="navigation__item">
-							<a class="navigation__link" href="#!">Расширения</a>
+							<a class="navigation__link link-offset-hov" href="#contents"
+								>Расширения</a
+							>
 						</li>
 						<li class="navigation__item">
-							<a class="navigation__link" href="#!">Галерея</a>
+							<a class="navigation__link link-offset-hov" href="#gallery"
+								>Галерея</a
+							>
 						</li>
 						<li class="navigation__item">
-							<a class="navigation__link" href="#!">Отзывы</a>
+							<a class="navigation__link link-offset-hov" href="#testimonials"
+								>Отзывы</a
+							>
 						</li>
 					</ul>
 				</nav>
 
-				<button class="header__entry btn-offset">Войти</button>
+				<button
+					class="header__entry btn-offset btn-hov"
+					aria-label="Войти в учетную запись"
+				>
+					Войти
+				</button>
 			</div>
 		</header>
 
@@ -60,10 +75,12 @@
 						график.
 					</p>
 					<div class="hero__buttons">
-						<button class="hero__button hero__button_free btn-offset">
+						<button
+							class="hero__button hero__button_free btn-offset blue-btn-hov"
+						>
 							Попробовать бесплатно
 						</button>
-						<button class="hero__button hero__button_more btn-offset">
+						<button class="hero__button hero__button_more btn-offset btn-hov">
 							Узнать больше
 						</button>
 					</div>
@@ -71,7 +88,7 @@
 				<div class="hero__img"></div>
 			</section>
 
-			<section class="features">
+			<section class="features" id="features">
 				<div class="container">
 					<h2 class="features__title first-title-offset">Возможности</h2>
 					<p class="features__description first-description-offset">
@@ -83,7 +100,10 @@
 					<div class="features__content">
 						<div class="features__image"></div>
 						<ul class="features__list">
-							<li class="features__item">
+							<li
+								class="features__item"
+								aria-label="Элемент списка полезные подсказки"
+							>
 								<h3
 									class="features__item-title features__item-title_tips second-title-offset"
 								>
@@ -94,7 +114,10 @@
 									полезную информацию.
 								</p>
 							</li>
-							<li class="features__item">
+							<li
+								class="features__item"
+								aria-label="Элемент списка умный интерфейс"
+							>
 								<h3
 									class="features__item-title features__item-title_interface second-title-offset"
 								>
@@ -105,7 +128,10 @@
 									текущую задачу.
 								</p>
 							</li>
-							<li class="features__item">
+							<li
+								class="features__item"
+								aria-label="Элемент списка синхронизация"
+							>
 								<h3
 									class="features__item-title features__item-title_sync second-title-offset"
 								>
@@ -120,7 +146,7 @@
 				</div>
 			</section>
 
-			<section class="contents">
+			<section class="contents" id="contents">
 				<div class="container">
 					<h2 class="contents__title first-title-offset">Расширения</h2>
 					<p class="contents__description first-description-offset">
@@ -130,7 +156,11 @@
 
 					<ul class="contents__list">
 						<li class="contents__item">
-							<article class="contents__article">
+							<article
+								class="contents__article"
+								tabindex="0"
+								aria-label="Элемент списка скачать расширение"
+							>
 								<h3
 									class="contents__article-title contents__article-title_download second-title-offset"
 								>
@@ -143,7 +173,7 @@
 									аккаунт? Slate Safe поможет вам с этим.
 								</p>
 								<button
-									class="contents__article-button contents__article-button_download btn-offset"
+									class="contents__article-button contents__article-button_download btn-offset blue-btn-hov"
 								>
 									Скачать
 								</button>
@@ -151,11 +181,15 @@
 							</article>
 						</li>
 						<li class="contents__item">
-							<article class="contents__article">
+							<article
+								class="contents__article"
+								tabindex="0"
+								aria-label="Элемент списка попробовать бесплатно"
+							>
 								<h3
 									class="contents__article-title contents__article-title_free second-title-offset"
 								>
-									<strong>Slate</strong> не конкурирует, <br />
+									<strong tabindex="1">Slate</strong> не конкурирует, <br />
 									а дружит со своими "коллегами"
 								</h3>
 								<p
@@ -165,7 +199,7 @@
 									планирования проектов.
 								</p>
 								<button
-									class="contents__article-button contents__article-button_free btn-offset"
+									class="contents__article-button contents__article-button_free btn-offset blue-btn-hov"
 								>
 									Попробовать бесплатно
 								</button>
@@ -176,7 +210,7 @@
 				</div>
 			</section>
 
-			<section class="gallery">
+			<section class="gallery" id="gallery">
 				<div class="container">
 					<h2 class="gallery__title first-title-offset">Галерея</h2>
 					<p class="gallery__description first-description-offset">
@@ -186,57 +220,83 @@
 
 					<ul class="gallery__list">
 						<li class="gallery__item">
-							<img
-								class="gallery__img"
-								src="./img/gallery1.jpg"
-								alt="Изображение из галереи"
-							/>
+							<picture>
+								<source
+									media="(max-width: 580px)"
+									srcset="./img/gallery1-mobil.avif"
+								/>
+								<img
+									class="gallery__img"
+									src="./img/gallery1.avif"
+									alt="Изображение №1 из галереи"
+								/>
+							</picture>
 						</li>
 						<li class="gallery__item">
-							<img
-								class="gallery__img"
-								src="./img/gallery2.jpg"
-								alt="Изображение из галереи"
-							/>
+							<picture>
+								<source
+									media="(max-width: 580px)"
+									srcset="./img/gallery2-mobil.avif"
+								/>
+								<img
+									class="gallery__img"
+									src="./img/gallery2.avif"
+									alt="Изображение №2 из галереи"
+								/>
+							</picture>
 						</li>
 						<li class="gallery__item">
-							<img
-								class="gallery__img"
-								src="./img/gallery3.jpg"
-								alt="Изображение из галереи"
-							/>
+							<picture>
+								<source
+									media="(max-width: 580px)"
+									srcset="./img/gallery3-mobil.avif"
+								/>
+								<img
+									class="gallery__img"
+									src="./img/gallery3.avif"
+									alt="Изображение №3 из галереи"
+								/>
+							</picture>
 						</li>
 						<li class="gallery__item">
+							<picture>
+								<source
+									media="(max-width: 580px)"
+									srcset="./img/gallery4-mobil.avif"
+								/>
+								<img
+									class="gallery__img"
+									src="./img/gallery4.avif"
+									alt="Изображение №4 из галереи"
+								/>
+							</picture>
+						</li>
+						<li class="gallery__item display-mobil">
 							<img
 								class="gallery__img"
-								src="./img/gallery4.jpg"
-								alt="Изображение из галереи"
+								src="./img/gallery5.avif"
+								alt="Изображение №5 из галереи"
 							/>
 						</li>
-						<li class="gallery__item">
+						<li class="gallery__item display-mobil">
 							<img
 								class="gallery__img"
-								src="./img/gallery5.jpg"
-								alt="Изображение из галереи"
+								src="./img/gallery6.avif"
+								alt="Изображение №6 из галереи"
 							/>
 						</li>
-						<li class="gallery__item">
+						<li class="gallery__item display-mobil">
 							<img
 								class="gallery__img"
-								src="./img/gallery6.jpg"
-								alt="Изображение из галереи"
-							/>
-						</li>
-						<li class="gallery__item">
-							<img
-								class="gallery__img"
-								src="./img/gallery7.jpg"
-								alt="Изображение из галереи"
+								src="./img/gallery7.avif"
+								alt="Изображение №7 из галереи"
 							/>
 						</li>
 					</ul>
 
-					<button class="gallery__button btn-offset">Смотреть еще</button>
+					<button class="gallery__button btn-offset btn-hov">
+						Смотреть еще
+					</button>
 				</div>
 			</section>
 
@@ -249,7 +309,11 @@
 					</p>
 
 					<ul class="partners__list">
-						<li class="partners__item">
+						<li
+							class="partners__item"
+							tabindex="0"
+							aria-label="Наш партнер: Apple Store"
+						>
 							<svg
 								class="partners__svg"
 								width="61"
@@ -274,7 +338,7 @@
 									y2="60.2734"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop stop-color="#17C9FB" />
+									<stop offset="0" stop-color="#17C9FB" />
 									<stop offset="1" stop-color="#1A74E8" />
 								</linearGradient>
 								<clipPath id="clip0_62_2726">
@@ -287,7 +351,11 @@
 								</clipPath>
 							</svg>
 						</li>
-						<li class="partners__item">
+						<li
+							class="partners__item"
+							tabindex="0"
+							aria-label="Наш партнер: Apiary"
+						>
 							<svg
 								class="partners__svg"
 								width="61"
@@ -347,7 +415,7 @@
 									y2="13.8806"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop stop-color="#37BDA6" />
+									<stop offset="0" stop-color="#37BDA6" />
 									<stop offset="1" stop-color="#8AD3B8" />
 								</linearGradient>
 								<linearGradient
@@ -369,7 +437,7 @@
 									y2="35.4747"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop stop-color="#4379A7" />
+									<stop offset="0" stop-color="#4379A7" />
 									<stop offset="1" stop-color="#7CC9B8" />
 								</linearGradient>
 								<clipPath id="clip0_62_2729">
@@ -382,7 +450,11 @@
 								</clipPath>
 							</svg>
 						</li>
-						<li class="partners__item">
+						<li
+							class="partners__item"
+							tabindex="0"
+							aria-label="Наш партнер: Android"
+						>
 							<svg
 								class="partners__svg"
 								width="61"
@@ -421,7 +493,11 @@
 								</clipPath>
 							</svg>
 						</li>
-						<li class="partners__item">
+						<li
+							class="partners__item"
+							tabindex="0"
+							aria-label="Наш партнер: Basecamp"
+						>
 							<svg
 								class="partners__svg"
 								width="73"
@@ -452,7 +528,11 @@
 								</clipPath>
 							</svg>
 						</li>
-						<li class="partners__item">
+						<li
+							class="partners__item"
+							tabindex="0"
+							aria-label="Наш партнер: Air B N B"
+						>
 							<svg
 								class="partners__svg"
 								width="61"
@@ -475,7 +555,11 @@
 								</clipPath>
 							</svg>
 						</li>
-						<li class="partners__item">
+						<li
+							class="partners__item"
+							tabindex="0"
+							aria-label="Наш партнер: I B M"
+						>
 							<svg
 								class="partners__svg"
 								width="151"
@@ -500,17 +584,23 @@
 						</li>
 					</ul>
 
-					<button class="partners__button btn-offset">Все партнёры</button>
+					<button class="partners__button btn-offset btn-hov">
+						Все партнёры
+					</button>
 				</div>
 			</section>
 
-			<section class="testimonials">
+			<section class="testimonials" id="testimonials">
 				<div class="container">
 					<h2 class="testimonials__title first-title-offset">Отзывы</h2>
 
 					<ul class="testimonials__list">
 						<li class="testimonials__item">
-							<article class="testimonials__article">
+							<article
+								class="testimonials__article"
+								tabindex="0"
+								aria-label="Отзыв от пользователя Алёна Романова"
+							>
 								<div class="testimonials__person">
 									<img
 										class="testimonials__avatar"
@@ -532,7 +622,11 @@
 							</article>
 						</li>
 						<li class="testimonials__item">
-							<article class="testimonials__article">
+							<article
+								class="testimonials__article"
+								tabindex="0"
+								aria-label="Отзыв от пользователя Евгений Титов"
+							>
 								<div class="testimonials__person">
 									<img
 										class="testimonials__avatar"
@@ -554,7 +648,11 @@
 							</article>
 						</li>
 						<li class="testimonials__item">
-							<article class="testimonials__article">
+							<article
+								class="testimonials__article"
+								tabindex="0"
+								aria-label="Отзыв от пользователя Роман Васильев"
+							>
 								<div class="testimonials__person">
 									<img
 										class="testimonials__avatar"
@@ -576,7 +674,11 @@
 							</article>
 						</li>
 						<li class="testimonials__item">
-							<article class="testimonials__article">
+							<article
+								class="testimonials__article"
+								tabindex="0"
+								aria-label="Отзыв от пользователя Лиза Ковалёва"
+							>
 								<div class="testimonials__person">
 									<img
 										class="testimonials__avatar"
@@ -611,22 +713,34 @@
 						</h2>
 						<ul class="footer__list">
 							<li class="footer__item">
-								<a class="footer__link second-description-offset" href="">
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#features"
+								>
 									Возможности
 								</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link second-description-offset" href="">
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#contents"
+								>
 									Расширения
 								</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link second-description-offset" href="">
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#gallery"
+								>
 									Галерея
 								</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link second-description-offset" href="">
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#testimonials"
+								>
 									Отзывы
 								</a>
 							</li>
@@ -639,16 +753,34 @@
 						</h2>
 						<ul class="footer__list">
 							<li class="footer__item">
-								<a class="footer__link second-description-offset">Приложение</a>
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#!"
+								>
+									Приложение
+								</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link second-description-offset">Обновления</a>
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#!"
+								>
+									Обновления
+								</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link second-description-offset">Скрипты</a>
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#!"
+								>
+									Скрипты
+								</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link second-description-offset">
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#!"
+								>
 									Документация
 								</a>
 							</li>
@@ -659,15 +791,28 @@
 						<h2 class="footer__navigation-title second-title-offset">Мы</h2>
 						<ul class="footer__list">
 							<li class="footer__item">
-								<a class="footer__link second-description-offset">
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#!"
+								>
 									О приложении
 								</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link second-description-offset">Контакты</a>
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#!"
+								>
+									Контакты
+								</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link second-description-offset">Связаться</a>
+								<a
+									class="footer__link second-description-offset link-offset-hov"
+									href="#!"
+								>
+									Связаться
+								</a>
 							</li>
 						</ul>
 					</li>
@@ -675,7 +820,11 @@
 
 				<ul class="footer__contacts-list">
 					<li class="footer__contacts-item">
-						<address class="footer__contact">
+						<address
+							class="footer__contact"
+							tabindex="0"
+							aria-label="Наш адрес: улица Московская, дом 1"
+						>
 							<svg
 								width="47"
 								height="47"
@@ -698,6 +847,7 @@
 						<a
 							class="footer__contact footer__contact_phone"
 							href="tel:79414323211"
+							aria-label="Вы можете связаться с нами по номеру телефона +7 941 432 32 11"
 						>
 							<svg
 								width="36"
@@ -719,9 +869,10 @@
 						<ul class="footer__social-list">
 							<li class="footer__social-item">
 								<a
-									class="footer__social-link footer__social_twitter"
+									class="footer__social-link footer__social-link_twitter"
 									target="_blank"
 									href="https://twitter.com"
+									aria-label="Вы можете связаться с нами через twitter"
 								>
 									<svg
 										width="42"
@@ -738,9 +889,10 @@
 							</li>
 							<li class="footer__social-item">
 								<a
-									class="footer__social-link footer__social_facebook"
+									class="footer__social-link footer__social-link_facebook"
 									target="_blank"
 									href="https://www.facebook.com"
+									aria-label="Вы можете связаться с нами через facebook"
 								>
 									<svg
 										width="42"
@@ -757,9 +909,10 @@
 							</li>
 							<li class="footer__social-item">
 								<a
-									class="footer__social-link footer__social_linkedin"
+									class="footer__social-link footer__social-link_linkedin"
 									target="_blank"
 									href="https://www.linkedin.com"
+									aria-label="Вы можете связаться с нами через linkedin"
 								>
 									<svg
 										width="42"

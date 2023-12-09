@@ -18,6 +18,9 @@
 	font-weight: 500;
 	line-height: 25px;
 	letter-spacing: 0.2px;
+	transition-property: background-color, color, border-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
 }
 
 .first-title-offset {
@@ -47,4 +50,74 @@
 	font-weight: 400;
 	line-height: 24px; /* 150% */
 	letter-spacing: 0.2px;
+}
+
+.link-offset-hov {
+	display: inline-block;
+	transition: color 0.3s ease-in-out;
+}
+
+.link-offset-hov::after {
+	display: block;
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: var(--first-color);
+	transition: width 0.3s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+	.container {
+		--container-width: 960px;
+		--container-offset: 40px;
+	}
+}
+
+@media (max-width: 760px) {
+	.container {
+		--container-width: 700px;
+		--container-offset: 30px;
+	}
+	.link-offset-hov::after {
+		height: 1px;
+	}
+}
+
+@media (max-width: 580px) {
+	.container {
+		--container-width: 550px;
+		--container-offset: 15px;
+	}
+}
+
+.link-offset-hov:hover::after,
+.link-offset-hov:focus::after {
+	width: 100%;
+}
+
+.link-offset-hov:active:not(:hover):not(:focus) {
+	color: var(--active-color);
+}
+
+.btn-hov:hover,
+.btn-hov:focus {
+	background-color: var(--second-bg);
+	color: var(--second-color);
+	border-color: var(--second-bg);
+}
+
+.btn-hov:active {
+	background-color: var(--active-color);
+	border-color: var(--active-color);
+}
+
+.blue-btn-hov:hover,
+.blue-btn-hov:focus {
+	background-color: var(--blue-hov);
+	border-color: var(--second-bg);
+}
+
+.blue-btn-hov:active {
+	background-color: var(--blue-active);
+	border-color: var(--second-bg);
 }
