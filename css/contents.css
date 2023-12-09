@@ -109,4 +109,7 @@
 	.contents__article {
 		padding: 15px;
 	}
+  .contents__article-button_free {
+    width: 240px;
+  }
 }
