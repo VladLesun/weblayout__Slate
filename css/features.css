@@ -94,3 +94,10 @@
 		padding-right: 376px;
 	}
 }
+
+@media (max-width: 415px) {
+	.features__image {
+		min-height: 300px;
+		padding-right: 300px;
+	}
+}
