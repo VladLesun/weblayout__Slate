@@ -48,3 +48,10 @@
 		gap: 50px;
 	}
 }
+
+@media (max-width: 415px) {
+	.partners__list {
+		flex-direction: column;
+		gap: 20px;
+	}
+}

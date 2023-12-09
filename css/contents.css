@@ -105,5 +105,8 @@
 	}
 }
 
-@media (max-width: 580px) {
+@media (max-width: 415px) {
+	.contents__article {
+		padding: 15px;
+	}
 }

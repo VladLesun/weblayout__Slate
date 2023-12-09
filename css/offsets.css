@@ -90,6 +90,15 @@
 	}
 }
 
+@media (max-width: 415px) {
+	.container {
+		--container-offset: 10px;
+	}
+	.first-title-offset {
+		font-size: 40px;
+	}
+}
+
 .link-offset-hov:hover::after,
 .link-offset-hov:focus::after {
 	width: 100%;
