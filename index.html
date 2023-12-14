@@ -29,29 +29,47 @@
 	<body>
 		<header class="header">
 			<div class="container header__container">
-				<img class="header__logo" src="./img/logo.svg" alt="Логотип компании" />
+				<a href="index.html" class="header__log">
+					<img src="./img/logo.svg" alt="Логотип компании" />
+				</a>
 
 				<nav class="header__navigation navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item">
-							<a class="navigation__link link-offset-hov" href="#features"
-								>Возможности</a
+							<a
+								class="navigation__link link-offset-hov"
+								href="#features"
+								aria-label="Перейти к секции: Возможности"
 							>
+								Возможности
+							</a>
 						</li>
 						<li class="navigation__item">
-							<a class="navigation__link link-offset-hov" href="#contents"
-								>Расширения</a
+							<a
+								class="navigation__link link-offset-hov"
+								href="#contents"
+								aria-label="Перейти к секции: Расширения"
 							>
+								Расширения
+							</a>
 						</li>
 						<li class="navigation__item">
-							<a class="navigation__link link-offset-hov" href="#gallery"
-								>Галерея</a
+							<a
+								class="navigation__link link-offset-hov"
+								href="#gallery"
+								aria-label="Перейти к секции: Галерея"
 							>
+								Галерея
+							</a>
 						</li>
 						<li class="navigation__item">
-							<a class="navigation__link link-offset-hov" href="#testimonials"
-								>Отзывы</a
+							<a
+								class="navigation__link link-offset-hov"
+								href="#testimonials"
+								aria-label="Перейти к секции: Отзывы"
 							>
+								Отзывы
+							</a>
 						</li>
 					</ul>
 				</nav>
@@ -77,10 +95,14 @@
 					<div class="hero__buttons">
 						<button
 							class="hero__button hero__button_free btn-offset blue-btn-hov"
+							aria-label="Нажать на кнопку попробовать бесплатно"
 						>
 							Попробовать бесплатно
 						</button>
-						<button class="hero__button hero__button_more btn-offset btn-hov">
+						<button
+							class="hero__button hero__button_more btn-offset btn-hov"
+							aria-label="Нажать на кнопку узнать больше"
+						>
 							Узнать больше
 						</button>
 					</div>
@@ -100,10 +122,7 @@
 					<div class="features__content">
 						<div class="features__image"></div>
 						<ul class="features__list">
-							<li
-								class="features__item"
-								aria-label="Элемент списка полезные подсказки"
-							>
+							<li class="features__item">
 								<h3
 									class="features__item-title features__item-title_tips second-title-offset"
 								>
@@ -114,10 +133,7 @@
 									полезную информацию.
 								</p>
 							</li>
-							<li
-								class="features__item"
-								aria-label="Элемент списка умный интерфейс"
-							>
+							<li class="features__item">
 								<h3
 									class="features__item-title features__item-title_interface second-title-offset"
 								>
@@ -128,10 +144,7 @@
 									текущую задачу.
 								</p>
 							</li>
-							<li
-								class="features__item"
-								aria-label="Элемент списка синхронизация"
-							>
+							<li class="features__item">
 								<h3
 									class="features__item-title features__item-title_sync second-title-offset"
 								>
@@ -156,11 +169,7 @@
 
 					<ul class="contents__list">
 						<li class="contents__item">
-							<article
-								class="contents__article"
-								tabindex="0"
-								aria-label="Элемент списка скачать расширение"
-							>
+							<article class="contents__article">
 								<h3
 									class="contents__article-title contents__article-title_download second-title-offset"
 								>
@@ -181,15 +190,11 @@
 							</article>
 						</li>
 						<li class="contents__item">
-							<article
-								class="contents__article"
-								tabindex="0"
-								aria-label="Элемент списка попробовать бесплатно"
-							>
+							<article class="contents__article">
 								<h3
 									class="contents__article-title contents__article-title_free second-title-offset"
 								>
-									<strong tabindex="1">Slate</strong> не конкурирует, <br />
+									<strong>Slate</strong> не конкурирует, <br />
 									а дружит со своими "коллегами"
 								</h3>
 								<p
@@ -294,7 +299,10 @@
 						</li>
 					</ul>
 
-					<button class="gallery__button btn-offset btn-hov">
+					<button
+						class="gallery__button btn-offset btn-hov"
+						aria-label="Нажать на кнопку: смотреть еще"
+					>
 						Смотреть еще
 					</button>
 				</div>
@@ -309,11 +317,7 @@
 					</p>
 
 					<ul class="partners__list">
-						<li
-							class="partners__item"
-							tabindex="0"
-							aria-label="Наш партнер: Apple Store"
-						>
+						<li class="partners__item">
 							<svg
 								class="partners__svg"
 								width="61"
@@ -351,11 +355,7 @@
 								</clipPath>
 							</svg>
 						</li>
-						<li
-							class="partners__item"
-							tabindex="0"
-							aria-label="Наш партнер: Apiary"
-						>
+						<li class="partners__item">
 							<svg
 								class="partners__svg"
 								width="61"
@@ -450,11 +450,7 @@
 								</clipPath>
 							</svg>
 						</li>
-						<li
-							class="partners__item"
-							tabindex="0"
-							aria-label="Наш партнер: Android"
-						>
+						<li class="partners__item">
 							<svg
 								class="partners__svg"
 								width="61"
@@ -493,11 +489,7 @@
 								</clipPath>
 							</svg>
 						</li>
-						<li
-							class="partners__item"
-							tabindex="0"
-							aria-label="Наш партнер: Basecamp"
-						>
+						<li class="partners__item">
 							<svg
 								class="partners__svg"
 								width="73"
@@ -528,11 +520,7 @@
 								</clipPath>
 							</svg>
 						</li>
-						<li
-							class="partners__item"
-							tabindex="0"
-							aria-label="Наш партнер: Air B N B"
-						>
+						<li class="partners__item">
 							<svg
 								class="partners__svg"
 								width="61"
@@ -555,11 +543,7 @@
 								</clipPath>
 							</svg>
 						</li>
-						<li
-							class="partners__item"
-							tabindex="0"
-							aria-label="Наш партнер: I B M"
-						>
+						<li class="partners__item">
 							<svg
 								class="partners__svg"
 								width="151"
@@ -584,7 +568,10 @@
 						</li>
 					</ul>
 
-					<button class="partners__button btn-offset btn-hov">
+					<button
+						class="partners__button btn-offset btn-hov"
+						aria-label="Нажать кнопку: все партнёры"
+					>
 						Все партнёры
 					</button>
 				</div>
@@ -596,11 +583,7 @@
 
 					<ul class="testimonials__list">
 						<li class="testimonials__item">
-							<article
-								class="testimonials__article"
-								tabindex="0"
-								aria-label="Отзыв от пользователя Алёна Романова"
-							>
+							<article class="testimonials__article">
 								<div class="testimonials__person">
 									<img
 										class="testimonials__avatar"
@@ -622,11 +605,7 @@
 							</article>
 						</li>
 						<li class="testimonials__item">
-							<article
-								class="testimonials__article"
-								tabindex="0"
-								aria-label="Отзыв от пользователя Евгений Титов"
-							>
+							<article class="testimonials__article">
 								<div class="testimonials__person">
 									<img
 										class="testimonials__avatar"
@@ -648,11 +627,7 @@
 							</article>
 						</li>
 						<li class="testimonials__item">
-							<article
-								class="testimonials__article"
-								tabindex="0"
-								aria-label="Отзыв от пользователя Роман Васильев"
-							>
+							<article class="testimonials__article">
 								<div class="testimonials__person">
 									<img
 										class="testimonials__avatar"
@@ -674,11 +649,7 @@
 							</article>
 						</li>
 						<li class="testimonials__item">
-							<article
-								class="testimonials__article"
-								tabindex="0"
-								aria-label="Отзыв от пользователя Лиза Ковалёва"
-							>
+							<article class="testimonials__article">
 								<div class="testimonials__person">
 									<img
 										class="testimonials__avatar"
@@ -716,6 +687,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#features"
+									aria-label="Переход по ссылке: возможности"
 								>
 									Возможности
 								</a>
@@ -724,6 +696,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#contents"
+									aria-label="Переход по ссылке: расширения"
 								>
 									Расширения
 								</a>
@@ -732,6 +705,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#gallery"
+									aria-label="Переход по ссылке: галерея"
 								>
 									Галерея
 								</a>
@@ -740,6 +714,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#testimonials"
+									aria-label="Переход по ссылке: отзывы"
 								>
 									Отзывы
 								</a>
@@ -756,6 +731,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#!"
+									aria-label="Переход по ссылке: приложение"
 								>
 									Приложение
 								</a>
@@ -764,6 +740,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#!"
+									aria-label="Переход по ссылке: обновления"
 								>
 									Обновления
 								</a>
@@ -772,6 +749,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#!"
+									aria-label="Переход по ссылке: скрипты"
 								>
 									Скрипты
 								</a>
@@ -780,6 +758,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#!"
+									aria-label="Переход по ссылке: документация"
 								>
 									Документация
 								</a>
@@ -794,6 +773,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#!"
+									aria-label="Переход по ссылке: о приложении"
 								>
 									О приложении
 								</a>
@@ -802,6 +782,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#!"
+									aria-label="Переход по ссылке: контакты"
 								>
 									Контакты
 								</a>
@@ -810,6 +791,7 @@
 								<a
 									class="footer__link second-description-offset link-offset-hov"
 									href="#!"
+									aria-label="Переход по ссылке: связаться"
 								>
 									Связаться
 								</a>
@@ -820,12 +802,14 @@
 
 				<ul class="footer__contacts-list">
 					<li class="footer__contacts-item">
-						<address
-							class="footer__contact"
-							tabindex="0"
+						<a
+							href="https://yandex.by/maps/103817/moskovsky/house/moskovskaya_ulitsa_1/Z04YdQFlQEQPQFtvfXl4c3phZg==/?ll=37.365919%2C55.592622&utm_source=ntp_chrome&z=16.9"
+							target="_blank"
+							class="footer__contact footer__contact_address"
 							aria-label="Наш адрес: улица Московская, дом 1"
 						>
 							<svg
+								class="footer__contact_address-svg"
 								width="47"
 								height="47"
 								viewBox="0 0 47 47"
@@ -841,7 +825,7 @@
 							</svg>
 
 							ул. Московская, д 1.
-						</address>
+						</a>
 					</li>
 					<li class="footer__contacts-item">
 						<a

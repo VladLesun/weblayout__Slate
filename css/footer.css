@@ -3,12 +3,21 @@
 }
 
 .footer__container {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
 	align-items: flex-start;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
 .footer__navigation-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 75px;
 	margin-right: 200px;
@@ -35,7 +44,11 @@
 }
 
 .footer__contact {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	font-size: 16px;
 	font-weight: 500;
@@ -44,13 +57,26 @@
 	outline: none;
 }
 
+.footer__contact_address,
+.footer__contact_address-svg,
 .footer__contact_phone,
 .footer__social-link {
+	-webkit-transition: color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	-o-transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out,
+		-webkit-transform 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out,
+		-webkit-transform 0.3s ease-in-out;
 }
 
 .footer__social-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	gap: 24px;
 }
@@ -68,11 +94,19 @@
 @media (max-width: 760px) {
 	.footer__container {
 		max-width: 296px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
 		align-items: flex-start;
 	}
 
 	.footer__navigation-list {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		gap: 75px;
 		margin-right: 0;
@@ -80,39 +114,111 @@
 	}
 }
 
-.footer__contact_phone:hover,
-.footer__contact_phone:focus {
-	color: #25d366;
+/* смартфоны, устройства с сенсорным экраном, с которым работают пальцами */
+@media (hover: none) and (pointer: coarse) {
+	.footer__contact_address:active {
+		color: #ffcc00;
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	.footer__contact_phone:active {
+		color: #25d366;
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	.footer__social-link_twitter:active {
+		color: var(--active-color);
+	}
+	.footer__social-link_facebook:active {
+		color: var(--active-color);
+	}
+	.footer__social-link_linkedin:active {
+		color: var(--active-color);
+	}
 }
 
-.footer__contact_phone:active {
-	color: #25d366;
-	transform: scale(0.9);
+/* устройства с сенсорным экраном, с которым работают стилусом */
+@media (hover: none) and (pointer: fine) {
+	.footer__contact_address:active {
+		color: #ffcc00;
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	.footer__contact_address-svg:active {
+		color: #fc3f1d;
+	}
+	.footer__contact_phone:active {
+		color: #25d366;
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	.footer__social-link_twitter:active {
+		color: var(--active-color);
+	}
+	.footer__social-link_facebook:active {
+		color: var(--active-color);
+	}
+	.footer__social-link_linkedin:active {
+		color: var(--active-color);
+	}
 }
 
-.footer__social-link_twitter:hover,
-.footer__social-link_twitter:focus {
-	color: #1da1f2;
+/* контроллер Nintendo Wii, Microsoft Kinect */
+@media (hover: hover) and (pointer: coarse) {
+	.footer__contact_address:hover,
+	.footer__contact_address:focus {
+		color: #ffcc00;
+	}
+	.footer__contact_address-svg:hover,
+	.footer__contact_address-svg:focus {
+		color: #fc3f1d;
+	}
+	.footer__contact_phone:hover,
+	.footer__contact_phone:focus {
+		color: #25d366;
+	}
+	.footer__social-link_twitter:hover,
+	.footer__social-link_twitter:focus {
+		color: #1da1f2;
+	}
+	.footer__social-link_facebook:hover,
+	.footer__social-link_facebook:focus {
+		color: #1877f2;
+	}
+	.footer__social-link_linkedin:hover,
+	.footer__social-link_linkedin:focus {
+		color: #2867b2;
+	}
 }
 
-.footer__social-link_facebook:hover,
-.footer__social-link_facebook:focus {
-	color: #1877f2;
-}
-
-.footer__social-link_linkedin:hover,
-.footer__social-link_linkedin:focus {
-	color: #2867b2;
-}
-
-.footer__social-link_twitter:active {
-	color: var(--active-color);
-}
-
-.footer__social-link_facebook:active {
-	color: var(--active-color);
-}
-
-.footer__social-link_linkedin:active {
-	color: var(--active-color);
+/* мышь, тачпад */
+@media (hover: hover) and (pointer: fine) {
+	.footer__contact_address:hover,
+	.footer__contact_address:focus {
+		color: #ffcc00;
+	}
+	.footer__contact_address-svg:hover,
+	.footer__contact_address-svg:focus {
+		color: #fc3f1d;
+	}
+	.footer__contact_phone:hover,
+	.footer__contact_phone:focus {
+		color: #25d366;
+	}
+	.footer__social-link_twitter:hover,
+	.footer__social-link_twitter:focus {
+		color: #1da1f2;
+	}
+	.footer__social-link_facebook:hover,
+	.footer__social-link_facebook:focus {
+		color: #1877f2;
+	}
+	.footer__social-link_linkedin:hover,
+	.footer__social-link_linkedin:focus {
+		color: #2867b2;
+	}
 }

@@ -12,6 +12,8 @@
 }
 
 .contents__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 33px;
 }
@@ -22,15 +24,32 @@
 	background-color: var(--second-bg);
 	color: var(--second-color);
 	border-radius: 10px;
+	outline: none;
+	-webkit-transition: -webkit-transform 0.5s ease-in-out,
+		-webkit-box-shadow 0.3s ease-in-out;
+	transition: -webkit-transform 0.5s ease-in-out,
+		-webkit-box-shadow 0.3s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+	transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+	transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out,
+		-webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 .contents__article {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 40px 35px;
-	outline: none;
 }
 
 .contents__article-title {
@@ -92,6 +111,7 @@
 
 @media (max-width: 1000px) {
 	.contents__list {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 	.contents__article {
@@ -109,7 +129,29 @@
 	.contents__article {
 		padding: 15px;
 	}
-  .contents__article-button_free {
-    width: 240px;
-  }
+	.contents__article-button_free {
+		width: 240px;
+	}
+}
+
+/* контроллер Nintendo Wii, Microsoft Kinect */
+@media (hover: hover) and (pointer: coarse) {
+	.contents__item:hover {
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+		-webkit-box-shadow: 5px 5px 15px var(--first-color);
+		box-shadow: 5px 5px 15px var(--first-color);
+	}
+}
+
+/* мышь, тачпад */
+@media (hover: hover) and (pointer: fine) {
+	.contents__item:hover {
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+		-webkit-box-shadow: 5px 5px 15px var(--first-color);
+		box-shadow: 5px 5px 15px var(--first-color);
+	}
 }

@@ -3,6 +3,9 @@
 }
 
 .header__container {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
 	gap: 110px;
 }
@@ -24,6 +27,8 @@
 
 @media (max-width: 1000px) {
 	.header__container {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 		gap: 100px;
 	}
@@ -42,7 +47,7 @@
 	.header__container {
 		gap: 0;
 	}
-  .header__entry {
-    width: 100px;
-  }
+	.header__entry {
+		width: 100px;
+	}
 }

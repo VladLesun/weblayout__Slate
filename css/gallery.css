@@ -12,12 +12,27 @@
 }
 
 .gallery__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	gap: 33px 44px;
 	margin-bottom: 44px;
+}
+
+.gallery__item {
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	transition: -webkit-transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .gallery__img {
@@ -46,10 +61,32 @@
 
 @media (max-width: 580px) {
 	.gallery__list {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 	.gallery__img {
+		-o-object-fit: none;
 		object-fit: none;
 		height: 285px;
+	}
+}
+
+/* контроллер Nintendo Wii, Microsoft Kinect */
+@media (hover: hover) and (pointer: coarse) {
+	.gallery__item:hover {
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
+
+/* мышь, тачпад */
+@media (hover: hover) and (pointer: fine) {
+	.gallery__item:hover {
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
 	}
 }
