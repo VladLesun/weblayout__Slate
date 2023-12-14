@@ -57,13 +57,16 @@
 	outline: none;
 }
 
-.footer__contact_address .footer__contact_address-svg,
+.footer__contact_address,
+.footer__contact_address-svg,
 .footer__contact_phone,
 .footer__social-link {
 	-webkit-transition: color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 	-o-transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out,
+		-webkit-transform 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out,
 		-webkit-transform 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out,
