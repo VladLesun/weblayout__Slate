@@ -134,8 +134,8 @@
 	}
 }
 
-/* контроллер Nintendo Wii, Microsoft Kinect */
-@media (hover: hover) and (pointer: coarse) {
+/* мышь, тачпад */
+@media (hover: hover) {
 	.contents__item:hover {
 		-webkit-transform: scale(1.05);
 		-ms-transform: scale(1.05);
@@ -143,15 +143,8 @@
 		-webkit-box-shadow: 5px 5px 15px var(--first-color);
 		box-shadow: 5px 5px 15px var(--first-color);
 	}
-}
 
-/* мышь, тачпад */
-@media (hover: hover) and (pointer: fine) {
-	.contents__item:hover {
-		-webkit-transform: scale(1.05);
-		-ms-transform: scale(1.05);
-		transform: scale(1.05);
-		-webkit-box-shadow: 5px 5px 15px var(--first-color);
-		box-shadow: 5px 5px 15px var(--first-color);
+	.contents__article-button:focus {
+		box-shadow: 5px 5px 10px #000;
 	}
 }

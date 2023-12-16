@@ -73,17 +73,8 @@
 	}
 }
 
-/* контроллер Nintendo Wii, Microsoft Kinect */
-@media (hover: hover) and (pointer: coarse) {
-	.gallery__item:hover {
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-}
-
 /* мышь, тачпад */
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
 	.gallery__item:hover {
 		-webkit-transform: scale(1.1);
 		-ms-transform: scale(1.1);

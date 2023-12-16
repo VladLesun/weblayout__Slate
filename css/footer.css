@@ -58,13 +58,16 @@
 }
 
 .footer__contact_address,
-.footer__contact_address-svg,
+.footer__contact-address-text,
+.footer__contact-address-svg,
 .footer__contact_phone,
-.footer__social-link {
+.footer__social-link > svg {
 	-webkit-transition: color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 	-o-transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out,
+		-webkit-transform 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out,
 		-webkit-transform 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out,
@@ -81,9 +84,6 @@
 	-ms-flex-align: center;
 	align-items: center;
 	gap: 24px;
-}
-
-@media (max-width: 1200px) {
 }
 
 @media (max-width: 1000px) {
@@ -116,114 +116,70 @@
 	}
 }
 
-/* смартфоны, устройства с сенсорным экраном, с которым работают пальцами */
-@media (hover: none) and (pointer: coarse) {
-	.footer__contact_address:active {
-		color: #ffcc00;
-		-webkit-transform: scale(0.9);
-		-ms-transform: scale(0.9);
-		transform: scale(0.9);
-	}
-	.footer__contact_address:active .footer__contact_address-svg {
-		color: #fc3f1d;
-	}
-	.footer__contact_phone:active {
-		color: #25d366;
-		-webkit-transform: scale(0.9);
-		-ms-transform: scale(0.9);
-		transform: scale(0.9);
-	}
-	.footer__social-link_twitter:active {
-		color: var(--active-color);
-	}
-	.footer__social-link_facebook:active {
-		color: var(--active-color);
-	}
-	.footer__social-link_linkedin:active {
-		color: var(--active-color);
-	}
-}
-
-/* устройства с сенсорным экраном, с которым работают стилусом */
-@media (hover: none) and (pointer: fine) {
-	.footer__contact_address:active {
-		color: #ffcc00;
-		-webkit-transform: scale(0.9);
-		-ms-transform: scale(0.9);
-		transform: scale(0.9);
-	}
-	.footer__contact_address:active .footer__contact_address-svg {
-		color: #fc3f1d;
-	}
-	.footer__contact_phone:active {
-		color: #25d366;
-		-webkit-transform: scale(0.9);
-		-ms-transform: scale(0.9);
-		transform: scale(0.9);
-	}
-	.footer__social-link_twitter:active {
-		color: var(--active-color);
-	}
-	.footer__social-link_facebook:active {
-		color: var(--active-color);
-	}
-	.footer__social-link_linkedin:active {
-		color: var(--active-color);
-	}
-}
-
-/* контроллер Nintendo Wii, Microsoft Kinect */
-@media (hover: hover) and (pointer: coarse) {
-	.footer__contact_address:hover,
-	.footer__contact_address:focus {
+/* мышь, тачпад */
+@media (hover: hover) {
+	.footer__contact_address:hover .footer__contact-address-text {
 		color: #ffcc00;
 	}
-	.footer__contact_address:hover .footer__contact_address-svg,
-	.footer__contact_address:focus .footer__contact_address-svg {
+	.footer__contact_address:hover .footer__contact-address-svg {
 		color: #fc3f1d;
 	}
-	.footer__contact_phone:hover,
-	.footer__contact_phone:focus {
+	.footer__contact_phone:hover {
 		color: #25d366;
 	}
-	.footer__social-link_twitter:hover,
-	.footer__social-link_twitter:focus {
+	.footer__social-link_twitter:hover {
 		color: #1da1f2;
 	}
-	.footer__social-link_facebook:hover,
-	.footer__social-link_facebook:focus {
+	.footer__social-link_facebook:hover {
 		color: #1877f2;
 	}
-	.footer__social-link_linkedin:hover,
-	.footer__social-link_linkedin:focus {
+	.footer__social-link_linkedin:hover {
 		color: #2867b2;
 	}
+
+	.footer__contact_address:focus,
+	.footer__contact_phone:focus,
+	.footer__social-link:focus > svg {
+		-webkit-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+
+	.footer__contact_address:active,
+	.footer__contact_phone:active,
+	.footer__social-link:active > svg {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
 }
 
-/* мышь, тачпад */
-@media (hover: hover) and (pointer: fine) {
-	.footer__contact_address:hover,
-	.footer__contact_address:focus {
+/* смартфоны, устройства с сенсорным экраном, с которым работают пальцами */
+@media (hover: none) {
+	.footer__contact_address:active {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	.footer__contact_address:active .footer__contact-address-text {
 		color: #ffcc00;
 	}
-	.footer__contact_address:hover .footer__contact_address-svg,
-	.footer__contact_address:focus .footer__contact_address-svg {
+	.footer__contact_address:active .footer__contact-address-svg {
 		color: #fc3f1d;
 	}
-	.footer__contact_phone:hover,
-	.footer__contact_phone:focus {
+	.footer__contact_phone:active {
 		color: #25d366;
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
 	}
-	.footer__social-link_twitter:hover,
-	.footer__social-link_twitter:focus {
+	.footer__social-link_twitter:active {
 		color: #1da1f2;
 	}
-	.footer__social-link_facebook:hover,
-	.footer__social-link_facebook:focus {
+	.footer__social-link_facebook:active {
 		color: #1877f2;
 	}
-	.footer__social-link_linkedin:hover,
-	.footer__social-link_linkedin:focus {
+	.footer__social-link_linkedin:active {
 		color: #2867b2;
 	}
 }
