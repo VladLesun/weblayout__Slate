@@ -1,0 +1,78 @@
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+:root {
+	--first-color: #fff;
+	--second-color: #000;
+	--active-color: #949494;
+	--first-bg: #181818;
+	--second-bg: #fff;
+	--blue-btn: #4452fe;
+	--blue-hov: #0015ff;
+	--blue-active: #1621a3;
+}
+
+body {
+	min-width: 320px;
+	background-color: var(--first-bg);
+	color: var(--first-color);
+	font-family: 'Graphik', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+svg {
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	outline: none;
+}
+
+button {
+	padding: 0;
+	color: var(--first-color);
+	background-color: transparent;
+	border: 1px solid transparent;
+	cursor: pointer;
+	outline: none;
+}

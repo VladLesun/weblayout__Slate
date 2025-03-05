@@ -1,3 +1,13 @@
 @import './css/normalize.css';
 @import './css/fonts.css';
 @import './css/default.css';
+@import './css/offsets.css';
+@import './css/header.css';
+@import './css/navigation.css';
+@import './css/hero.css';
+@import './css/features.css';
+@import './css/contents.css';
+@import './css/gallery.css';
+@import './css/partners.css';
+@import './css/testimonials.css';
+@import './css/footer.css';

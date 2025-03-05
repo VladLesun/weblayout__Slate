@@ -1,0 +1,179 @@
+.container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	--container-width: 1440px;
+	--container-offset: 30px;
+	max-width: calc(var(--container-width) + (var(--container-offset) * 2));
+	padding: 0 var(--container-offset);
+	margin: 0 auto;
+}
+
+.btn-offset {
+	height: 52px;
+	padding: 10px;
+	border: 1px solid transparent;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0.2px;
+	-webkit-transition-property: background-color, color, border-color, box-shadow;
+	-o-transition-property: background-color, color, border-color, box-shadow;
+	-webkit-transition-property: background-color, color, border-color,
+		-webkit-box-shadow;
+	transition-property: background-color, color, border-color, -webkit-box-shadow;
+	transition-property: background-color, color, border-color, box-shadow;
+	transition-property: background-color, color, border-color, box-shadow,
+		-webkit-box-shadow;
+	-webkit-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+	-webkit-transition-timing-function: ease-in-out;
+	-o-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+
+.first-title-offset {
+	font-size: 52px;
+	font-weight: 400;
+	line-height: 62px; /* 119.231% */
+	letter-spacing: 0.2px;
+}
+
+.first-description-offset {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px; /* 150% */
+	letter-spacing: 0.2px;
+}
+
+.second-title-offset {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px; /* 150% */
+	letter-spacing: 0.1px;
+}
+
+.second-description-offset {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px; /* 150% */
+	letter-spacing: 0.2px;
+}
+
+.link-offset-hov {
+	display: inline-block;
+	-webkit-transition: color 0.3s ease-in-out;
+	-o-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+
+.link-offset-hov::after {
+	display: block;
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: var(--first-color);
+	-webkit-transition: width 0.25s ease-in-out;
+	-o-transition: width 0.25s ease-in-out;
+	transition: width 0.25s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+	.container {
+		--container-width: 960px;
+		--container-offset: 40px;
+	}
+}
+
+@media (max-width: 760px) {
+	.container {
+		--container-width: 700px;
+		--container-offset: 30px;
+	}
+	.link-offset-hov::after {
+		height: 1px;
+	}
+}
+
+@media (max-width: 580px) {
+	.container {
+		--container-width: 550px;
+		--container-offset: 15px;
+	}
+}
+
+@media (max-width: 415px) {
+	.container {
+		--container-offset: 10px;
+	}
+	.first-title-offset {
+		font-size: 40px;
+	}
+}
+
+/* мышь, тачпад */
+@media (hover: hover) {
+	.link-offset-hov:hover::after {
+		width: 100%;
+	}
+	.btn-hov:hover {
+		background-color: var(--second-bg);
+		color: var(--second-color);
+		border-color: var(--second-bg);
+	}
+	.blue-btn-hov:hover {
+		background-color: var(--blue-hov);
+		border-color: var(--second-bg);
+	}
+
+	.link-offset-hov:focus::after {
+		width: 100%;
+	}
+	.btn-hov:focus {
+		-webkit-box-shadow: 5px 5px 10px #fff;
+		box-shadow: 5px 5px 10px #fff;
+	}
+	.blue-btn-hov:focus {
+		-webkit-box-shadow: 5px 5px 10px #fff;
+		box-shadow: 5px 5px 10px #fff;
+	}
+
+	.link-offset-hov:active {
+		color: var(--active-color);
+	}
+	.btn-hov:active {
+		background-color: var(--active-color);
+		border-color: var(--active-color);
+	}
+	.blue-btn-hov:active {
+		background-color: var(--blue-active);
+		border-color: var(--second-bg);
+	}
+}
+
+/* смартфоны, устройства с сенсорным экраном, с которым работают пальцами */
+@media (hover: none) {
+	.link-offset-hov:active {
+		color: var(--active-color);
+	}
+	.btn-hov:active {
+		background-color: var(--active-color);
+		border-color: var(--active-color);
+	}
+	.blue-btn-hov:active {
+		background-color: var(--blue-active);
+		border-color: var(--second-bg);
+	}
+}
